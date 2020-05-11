@@ -15,6 +15,7 @@ public class UserListener implements ServletContextListener {
     // 监听 ServletContext 销毁
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
+        servletContextEvent.getServletContext();
         System.out.println("UserListener...contextDestroyed...");
     }
 }
